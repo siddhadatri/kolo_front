@@ -1,0 +1,48 @@
+<div class="block1">
+
+    <app-nav></app-nav>
+
+    <div class="citata">
+        <p>"Для корабля, который не знает, куда плывет, ни один ветер не будет попутным."</p>
+        <p>Луций Анней Сенека</p>
+    </div>
+
+    <div class="mainForGalery">
+        <div class="miniGalery">
+            <div class="miniPic">
+                <img src={{zafuPillow}} alt="черный" id="zafu" (click)='changeImg("../../assets/pic/black.jpg")'>
+            </div>
+            <div class="miniPic">
+                <img src={{petrolRound}} alt="петроль" id="petrol" (click)='changeImg("../../assets/pic/blue.jpg")'>
+            </div>
+            <div class="miniPic">
+                <img src={{violetRound}} alt="фиолетовый" id="violet" (click)='changeImg("../../assets/pic/20.jpg")'>
+            </div>
+            <div class="miniPic">
+                <img src={{beigeStrikt}} alt="Бежевый-полосатый" id="beigeStrikt" (click)='changeImg("../../assets/pic/23.jpg")'>
+            </div>
+
+               <!-- The expanding image container -->
+            <div class="fullPic">
+    
+                <!-- Expanded image -->
+                <img id="expandedImg" [src]="fullImg">
+
+                <!-- Image text -->
+                <div id="imgtext"></div>
+            </div>
+
+        <div class="descr">
+            <h2>Круглая подушка</h2>
+            <h3>300грн</h3>
+            <p>Диаметр 33см</p>
+            <p>Высота 15см</p>
+            <p>Вес ~ 2кг</p>
+            <p>Материал - мебельная или спецткань</p>
+            <p>Наполнитель - гречневая шелуха</p>
+
+            <button id="addCartBtn">Добавить в корзину</button>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

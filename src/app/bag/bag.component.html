@@ -1,0 +1,52 @@
+<div class="block1">
+
+    <app-nav></app-nav>
+
+    <div class="citata">
+        <p>"Для корабля, который не знает, куда плывет, ни один ветер не будет попутным."</p>
+        <p>Луций Анней Сенека</p>
+    </div>
+
+    <div class="mainForGalery">
+        <div class="miniGalery">
+            <div class="miniPic">
+                <img src={{bag1Img}} alt="сумка-узелок" (click)='changeImg("../../assets/pic/s1.JPG")'>
+            </div>
+            <div class="miniPic">
+                <img src={{bag2Img}} alt="сумка-узелок" (click)='changeImg("../../assets/pic/s2.JPG")'>
+            </div>
+            <div class="miniPic">
+                <img src={{bag3Img}} alt="сумка-узелок" (click)='changeImg("../../assets/pic/s3.JPG")'>
+            </div>
+            <div class="miniPic">
+                <img src={{bag4Img}} alt="сумка-узелок" (click)='changeImg("../../assets/pic/s4.JPG")'>
+            </div>
+        </div>
+    
+        <!-- The expanding image container -->
+        <div class="fullPic">
+    
+            <!-- Expanded image -->
+            <img id="expandedImg" [src]="fullImg">
+    
+            <!-- Image text -->
+            <div id="imgtext"></div>
+        </div>
+
+        <div class="descr">
+            <h2>Сумка японский узел</h2>
+            <h3>280грн</h3>
+                <ul class="pay-list">
+                    <li>Ширина 60см</li>
+                    <li>Длинна 80см</li>
+                    <li>Материал - на выбор</li>
+                </ul>
+            <p>Данные изделия изготавливаются под заказ. Оставьте свои контактные данные при оформлении заказа, администратор обязательно с вами свяжется для уточнения деталей.</p>
+
+            <button id="addCartBtn">Добавить в корзину</button>
+        </div>
+    </div>
+    
+</div>
+
+<app-footer></app-footer>

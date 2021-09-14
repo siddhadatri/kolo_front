@@ -1,0 +1,3 @@
+сайт с галареей на JS
+https://html5css.ru/howto/howto_js_tab_img_gallery.php
+

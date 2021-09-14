@@ -1,0 +1,67 @@
+<div class="block1">
+    <app-nav></app-nav>
+
+    <div class="citata">
+        <p>"Где бы ты ни был, будь там целиком."</p>
+        <p>Экхарт Толле</p>
+    </div>
+
+    <div class="products-container">
+        <div class="product" *ngFor="let product of products">
+            <a [routerLink]="['/', 'dolka', product.id]"><div class="cover"></div></a>
+            <img [src]="imagesPaths[product.img]" alt="круглая подушка"> 
+            <p>{{ product.title }}</p>
+        </div>
+<!-- 
+        <div class="product">
+            <a [routerLink]="['round']"><div class="cover"></div></a>
+            <img src="../../assets/pic/Ellipse21.png" alt="круглая подушка"> 
+            <p>Круглая</p>
+        </div>
+        <div class="product">
+            <a href="/dolka"><div class="cover"></div></a>
+            <img src="../../assets/pic/Ellipse22.png" alt="подушка-долька"> 
+            <p>Долька</p>
+        </div>
+        <div class="product">
+            <a href="/forsleep"><div class="cover"></div></a>
+            <img src="../../assets/pic/Ellipse24.png" alt="подушка для сна"> 
+            <p>Для сна</p>
+        </div>
+        <div class="product">
+            <a href="/square"><div class="cover"></div></a>
+            <img src="../../assets/pic/Ellipse23.png" alt="плоская подушка"> 
+            <p>Плоская</p>
+        </div>
+        <div class="product">
+            <a href="/futon"><div class="cover"></div></a>
+            <img src="../../assets/pic/Ellipse10(3).png" alt="коврик для медитации"> 
+            <p>Футон</p>
+        </div>
+        <div class="product">
+            <a href="/bolster"><div class="cover"></div></a>
+            <img src="../../assets/pic/Ellipse10(2).png" alt="болстер"> 
+            <p>Болстер</p>
+        </div>
+        <div class="product">
+            <a href="/matras"><div class="cover"></div></a>
+            <img src="../../assets/pic/Ellipse10(5).png" alt="матрац"> 
+            <p>Матрац</p>
+        </div>
+        <div class="product">
+            <a href="/bag"><div class="cover"></div></a>
+            <img src="../../assets/pic/Ellipse10(6).png" alt="сумки"> 
+            <p>Сумки</p>
+        </div>
+        <div class="product">
+            <a href="/sale"><div class="cover"></div></a>
+            <img src="../../assets/pic/Ellipse10(4).png" alt="скидки"> 
+            <p>Скидки</p>
+        </div> -->
+
+    </div>    
+
+
+</div>
+
+<app-footer></app-footer>

@@ -1,0 +1,104 @@
+.citata {
+    font-family: 'Comfortaa';
+    color: #C8CCCF;
+    font-size: 17px;
+    line-height: 25px;
+    text-align: right;
+    position: absolute;
+    top: 70px;
+    right: 100px;
+    opacity: 0;
+}
+.citata:hover {
+        animation: show-text 2s forwards;
+    }
+    @keyframes show-text {
+        100% {
+            opacity: 1;
+        }
+}
+.block1 {
+    width: 100%;
+    height: 788px;
+    background-color: #4E6672;
+    padding-top: 50px;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+.infotag {
+    width: 60%;
+    font-family: 'Comfortaa';
+    color: #C8CCCF;
+    margin-top: 50px;
+}
+.infotag h4{
+    margin-bottom: 25px;
+}
+.medit-man {
+    width: 200px;
+    height: 400px;
+    position: absolute;
+    right: 200px;
+    top: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.man {
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 25%;
+    animation: up 4s infinite;
+}
+@keyframes up {
+    50% {
+        transform:translateY(-6px)
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+.shadow {
+    width: 80%;
+    margin-left: 15%;
+    animation: shadow 4s infinite;
+}
+@keyframes shadow {
+    50% {
+        width: 77%;
+    }
+    100% {
+        width: 80%;
+    }
+}
+
+.accordion {
+    width: 100%;
+    text-align: start;
+    background-color: #7B8995;
+    color:#171f24;
+    padding: 14px;
+    font-family: 'Comfortaa';
+    font-size: 17px;
+    box-shadow: 0 6px 12px #3f5058;
+    margin-bottom: 6px;
+    margin-top: 6px;
+}
+.active, .accordion:hover {
+    background-color: #90b6cf;
+}
+.panel {
+    max-height: 0;
+    overflow: hidden;
+}
+.accordion:after {
+    content: '\002B'; /* Код Юникода для символа "плюс"  (+) */
+    color: #fff;
+    font-size: 18px;
+    float: right;
+    margin-left: 4px;
+}
+.active:after {
+    content: "\2212"; /* Код Юникода для символа "минус"  (-) */
+}

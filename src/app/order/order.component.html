@@ -1,0 +1,61 @@
+<div class="block1">
+
+    <app-nav></app-nav>
+
+    <div class="citata">
+        <p>"Осознавать - значит жить, не беспокоясь о несовершенстве."</p>
+        <p>третий патриарх Дзэн Сосан</p>
+    </div>
+    <div class="cartContainer">
+        
+        <form [formGroup]="form" (ngSubmit)="onSubmit()">
+            <div class="mb-3">
+              <label for="inputName" class="form-label">Имя</label>
+              <input type="text" class="form-control" id="inputName" formControlName="name">
+            </div>
+            <div class="mb-3">
+              <label for="inputSurname" class="form-label">Фамилия</label>
+              <input type="text" class="form-control" id="inputSurname" formControlName="surname">
+            </div>
+            <div class="mb-3">
+                <label for="inputPhone" class="form-label">Номер телефона</label>
+                <input type="tel" class="form-control" id="inputPhone" formControlName="phonenumber">
+              </div>
+            <div class="mb-3">
+                <label for="inputEmail" class="form-label">Email</label>
+                <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" formControlName="email">
+            </div>
+
+            <select class="form-select" aria-label="Default select example" formControlName="payment" aria-placeholder="Выберите способ оплаты">
+                <option disabled required selected>Выберите способ оплаты</option>
+                <option value="1">При получении</option>
+                <option value="2">На карту</option>
+            </select>
+            
+            <select class="form-select" aria-label="Default select example" formControlName="delivery">
+                <option disabled required selected>Выберите способ доставки</option>
+                <option value="1">Самовывоз (Харьков)</option>
+                <option value="2">Новая почта</option>
+                <option value="3">Justin</option>
+                <option value="4">УкрПочта</option>
+            </select>
+
+            <div class="form-floating">
+                <textarea class="form-control" placeholder="Примечания к заказу" id="floatingTextarea" formControlName="notes"></textarea>
+                <label for="floatingTextarea">Примечания к заказу</label>
+            </div>
+            
+              <button type="submit" [disabled]="form.invalid"
+              
+              
+              >Оформить заказ</button>
+          </form>
+    </div>
+    <div class="medit-man">
+        <img src="../../assets/pic/man2.png" alt="meditation" class="man">
+        <img src="../../assets/pic/shadow.png" alt="shadow" class="shadow">
+    </div>
+</div>
+
+<app-footer></app-footer>
+<!-- *ngIf="form.invalid" class="noCursor" -->

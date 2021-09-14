@@ -1,0 +1,101 @@
+.block1 {
+    width: 100%;
+    height: 788px;
+    background-color: #4E6672;
+    padding-top: 50px;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+.citata {
+    font-family: 'Comfortaa';
+    color: #C8CCCF;
+    font-size: 17px;
+    line-height: 25px;
+    text-align: right;
+    position: absolute;
+    top: 70px;
+    right: 100px;
+    opacity: 0;
+}
+.citata:hover {
+        animation: show-text 2s forwards;
+    }
+    @keyframes show-text {
+        100% {
+            opacity: 1;
+        }
+}
+.cartContainer {
+    width: 50%;
+    padding-top: 70px;
+    color: #C8CCCF;
+}
+.cartContainer button {
+    border-radius: 6px;
+    width: 40%;
+    padding: 16px;
+    text-align: center;
+    background-color: #81BEE8;
+    color: #37474F;
+    font-size: 17px;
+    box-shadow: 0 6px 12px #41535c;
+    margin-top: 16px;
+}
+.cartContainer button:hover {
+    cursor: pointer;
+    box-shadow: 0 6px 18px #1b1d1d80;
+    background-color: #90c2e4;
+}
+.form-select {
+    margin-bottom: 16px;
+}
+.medit-man {
+    width: 300px;
+    height: 500px;
+    position: absolute;
+    right: 200px;
+    top: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.man {
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 25%;
+    animation: up 4s infinite;
+}
+@keyframes up {
+    50% {
+        transform:translateY(-6px)
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+.shadow {
+    width: 80%;
+    margin-left: 15%;
+    animation: shadow 4s infinite;
+}
+@keyframes shadow {
+    50% {
+        width: 77%;
+    }
+    100% {
+        width: 80%;
+    }
+}
+input.ng-invalid.ng-touched {
+    border: 2px solid #cf000080;
+}
+input.ng-valid.ng-touched {
+    border: 2px solid #198d0180;
+}
+.noCursor {
+    cursor: not-allowed;
+}
+.yesCursor {
+    cursor: pointer
+}

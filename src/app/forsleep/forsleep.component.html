@@ -1,0 +1,53 @@
+<div class="block1">
+
+    <app-nav></app-nav>
+
+    <div class="citata">
+        <p>"Для корабля, который не знает, куда плывет, ни один ветер не будет попутным."</p>
+        <p>Луций Анней Сенека</p>
+    </div>
+
+    <div class="mainForGalery">
+        <div class="miniGalery">
+            <div class="miniPic">
+                <img src={{forSleep1}} alt="для сна" (click)='changeImg("../../assets/pic/IMG_9852.JPG")'>
+            </div>
+            <div class="miniPic">
+                <img src={{forSleep2}} alt="для сна" (click)='changeImg("../../assets/pic/IMG_9853.JPG")'>
+            </div>
+            <div class="miniPic">
+                <img src={{forSleep3}} alt="для сна" (click)='changeImg("../../assets/pic/IMG_0004.JPG")'>
+            </div>
+            <div class="miniPic">
+                <img src={{forSleep4}} alt="для сна" (click)='changeImg("../../assets/pic/IMG_3409.JPG")'>
+            </div>
+        </div>
+    
+        <!-- The expanding image container -->
+        <div class="fullPic">
+    
+            <!-- Expanded image -->
+            <img id="expandedImg" [src]="fullImg">
+    
+            <!-- Image text -->
+            <div id="imgtext"></div>
+        </div>
+
+        <div class="descr">
+            <h2>Подушка для сна</h2>
+            <h3>200грн</h3>
+            <ul class="pay-list">
+                <li>Длинна 37см</li>
+                <li>Высота 12см</li>
+                <li>Вес ~ 1кг</li>
+                <li>Материал - тик</li>
+                <li>Наполнитель - гречневая шелуха</li>
+            </ul>
+
+            <button id="addCartBtn">Добавить в корзину</button>
+        </div>
+    </div>
+    
+</div>
+
+<app-footer></app-footer>

@@ -1,0 +1,53 @@
+<div class="block1">
+
+    <app-nav></app-nav>
+
+    <div class="citata">
+        <p>"Для корабля, который не знает, куда плывет, ни один ветер не будет попутным."</p>
+        <p>Луций Анней Сенека</p>
+    </div>
+
+    <div class="mainForGalery">
+        <div class="miniGalery">
+            <div class="miniPic">
+                <img src={{bol1}} alt="болстер" (click)='changeImg("../../assets/pic/IMG_6910.jpg")'>
+            </div>
+            <div class="miniPic">
+                <img src={{bol2}} alt="болстер" (click)='changeImg("../../assets/pic/b1.JPG")'>
+            </div>
+            <div class="miniPic">
+                <img src={{bol3}} alt="болстер" (click)='changeImg("../../assets/pic/b2.JPG")'>
+            </div>
+            <div class="miniPic">
+                <img src={{bol4}} alt="болстер" (click)='changeImg("../../assets/pic/b3.JPG")'>
+            </div>
+        </div>
+    
+        <!-- The expanding image container -->
+        <div class="fullPic">
+    
+            <!-- Expanded image -->
+            <img id="expandedImg" [src]="fullImg">
+    
+            <!-- Image text -->
+            <div id="imgtext"></div>
+        </div>
+
+        <div class="descr">
+            <h2>Болстер</h2>
+            <h3>480грн</h3>
+            <ul class="pay-list">
+                <li>Длинна 250см</li>
+                <li>Диаметр 15см</li>
+                <li>Материал - мебельная или спецткань</li>
+                <li>Наполнитель - гречневая шелуха</li>
+            </ul>
+            <p>Данные изделия изготавливаются под заказ. Оставьте свои контактные данные при оформлении заказа, администратор обязательно с вами свяжется для уточнения деталей.</p>
+
+            <button id="addCartBtn">Добавить в корзину</button>
+        </div>
+    </div>
+    
+</div>
+
+<app-footer></app-footer>

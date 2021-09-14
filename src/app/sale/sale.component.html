@@ -1,0 +1,43 @@
+<div class="block1">
+
+    <app-nav></app-nav>
+
+    <div class="citata">
+        <p>"Для корабля, который не знает, куда плывет, ни один ветер не будет попутным."</p>
+        <p>Луций Анней Сенека</p>
+    </div>
+
+    <div class="mainForGalery">
+        <div class="miniGalery">
+            <div class="miniPic">
+                <img src={{sale1}} alt="скидки" (click)='changeImg("../../assets/pic/zefir.jpg")'>
+            </div>
+            
+        </div>
+    
+        <!-- The expanding image container -->
+        <div class="fullPic">
+    
+            <!-- Expanded image -->
+            <img id="expandedImg" [src]="fullImg">
+    
+            <!-- Image text -->
+            <div id="imgtext"></div>
+        </div>
+
+        <div class="descr">
+            <h2>Подушки со скидкой</h2>
+            <h3>200грн</h3>
+            <ul class="pay-list">
+                <li>Диаметр 33см</li>
+                <li>Высота 15см</li>
+                <li>Вес ~ 2кг</li>
+                <li>Наполнитель - гречневая шелуха</li>
+            </ul>
+            <button id="addCartBtn">Добавить в корзину</button>
+        </div>
+    </div>
+    
+</div>
+
+<app-footer></app-footer>

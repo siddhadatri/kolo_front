@@ -1,0 +1,23 @@
+.footer {
+    height: 100px;
+    background-color: #1D263A;
+    padding-left: 150px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.social {
+    width: 25%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer a {
+    text-decoration: none;
+    color: #C8CCCF;
+    font-family: sans-serif;
+}
+.social img {
+    width: 30px;
+}

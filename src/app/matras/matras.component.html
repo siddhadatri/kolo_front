@@ -1,0 +1,53 @@
+<div class="block1">
+
+    <app-nav></app-nav>
+
+    <div class="citata">
+        <p>"Для корабля, который не знает, куда плывет, ни один ветер не будет попутным."</p>
+        <p>Луций Анней Сенека</p>
+    </div>
+
+    <div class="mainForGalery">
+        <div class="miniGalery">
+            <div class="miniPic">
+                <img src={{mat1}} alt="матрас" (click)='changeImg("../../assets/pic/m1.JPG")'>
+            </div>
+            <div class="miniPic">
+                <img src={{mat2}} alt="матрас" (click)='changeImg("../../assets/pic/m2.JPG")'>
+            </div>
+            <div class="miniPic">
+                <img src={{mat3}} alt="матрас" (click)='changeImg("../../assets/pic/m3.JPG")'>
+            </div>
+            <div class="miniPic">
+                <img src={{mat4}} alt="матрас" (click)='changeImg("../../assets/pic/m4.JPG")'>
+            </div>
+        </div>
+    
+        <!-- The expanding image container -->
+        <div class="fullPic">
+    
+            <!-- Expanded image -->
+            <img id="expandedImg" [src]="fullImg">
+    
+            <!-- Image text -->
+            <div id="imgtext"></div>
+        </div>
+
+        <div class="descr">
+            <h2>Матрац</h2>
+            <h3>1000грн</h3>
+                <ul class="pay-list">
+                    <li>Ширина 80см</li>
+                    <li>Длинна 190см</li>
+                    <li>Материал - двунитка</li>
+                    <li>Наполнитель - гречневая шелуха</li>
+                </ul>
+                <p>Данные изделия изготавливаются под заказ. Оставьте свои контактные данные при оформлении заказа, администратор обязательно с вами свяжется для уточнения деталей.</p>
+
+            <button id="addCartBtn">Добавить в корзину</button>
+        </div>
+    </div>
+    
+</div>
+
+<app-footer></app-footer>

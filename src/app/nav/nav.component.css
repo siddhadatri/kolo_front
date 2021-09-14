@@ -1,0 +1,23 @@
+.nav {
+    width: 30%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav a {
+    text-decoration: none;
+    color: #C8CCCF;
+    font-family: 'Comfortaa';
+    text-shadow: 0 2px 6px #37474F;
+}
+.nav a:hover {
+    color: #d1e4fc;
+    text-shadow: 0 2px 6px #212b30;
+}
+.logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 18px;
+}

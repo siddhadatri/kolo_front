@@ -1,0 +1,58 @@
+// Развернуть картинку в галерее товаров
+let miniGalery = document.querySelector(".miniGalery");
+let fullPic = document.getElementById("expandedImg");
+let picText = document.getElementById("imgtext");
+
+miniGalery.addEventListener("click", function(event){
+    let choosenPic = event.target;
+    var choosenPicSrc = choosenPic.src;
+    fullPic.src = choosenPicSrc;
+    fullPic.textContent = fullPic.alt;
+});
+
+//Кнопка добавления товара в корзину
+let addCartBtn = getElementById("addCartBtn");
+
+addCartBtn.addEventListener("click", function(event){
+    let btn = event.target;
+    let choosenColor = choosenPicSrc;
+    
+});
+//Аккордеон
+var accordion = document.getElementsByClassName("accordion");
+var i;
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight){
+            panel.style.maxHeight = null;
+            } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+          }
+    });    
+};
+
+<div>
+    <button (click)="c1.inc()">+</button>
+    <div #amountOfProducts>кол-во: {{c1.counter}}</div>
+    <button (click)="c1.dec()">-</button>
+</div>
+
+//в тс
+constructor(public c1: CartService) {}
+
+//в сервисе
+export class CartService {
+    counter = 0
+    inc(){
+        this.counter++
+    }
+    dec(){
+        this.counter--
+    }
+}
+**************
+RESOLVER
+
+import { Resolve } from '@angular/router';
